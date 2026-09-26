@@ -54,25 +54,16 @@
     .material-symbols-outlined.fill {
       font-variation-settings: 'FILL' 1;
     }
-    /* Sembunyikan scrollbar untuk native pill selector */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    /* Animasi Sheet Mobile */
     @keyframes slideUp {
       from { transform: translateY(100%); }
       to { transform: translateY(0); }
     }
     .animate-sheet {
-      animation: slideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation: slideUp 0.26s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-brand-100 selection:text-brand-900 pb-24 lg:pb-0">
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-brand-100 selection:text-brand-900 pb-20 lg:pb-0">
 
   <!-- TOP BAR: TRUST & CONTACT (DESKTOP) -->
   <div class="hidden sm:block bg-brand-900 text-slate-100 text-xs font-medium border-b border-brand-800">
@@ -95,13 +86,13 @@
     </div>
   </div>
 
-  <!-- NAVIGATION BAR (STICKY APP-STYLE) -->
+  <!-- NAVIGATION BAR (STICKY APP-STYLE HEADER) -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-xl border-b border-slate-200/80 shadow-xs transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[68px] sm:h-[74px] flex items-center justify-between gap-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[64px] sm:h-[74px] flex items-center justify-between gap-4">
       
       <!-- Brand Logo dari URL Asli -->
       <a href="#" class="flex items-center gap-2.5 shrink-0 group active:scale-95 transition-transform">
-        <div class="h-10 sm:h-11 px-2 py-1 rounded-xl bg-[#2DAA9E] flex items-center justify-center shadow-xs">
+        <div class="h-10 sm:h-11 px-2.5 py-1 rounded-xl bg-[#2DAA9E] flex items-center justify-center shadow-xs">
           <img 
             src="https://elmangemilang.com/wp-content/uploads/2023/05/Logo-PNG-White-3-e1683858732571-150x150.png" 
             alt="Logo PT. Elman Gemilang" 
@@ -138,18 +129,18 @@
 
       <!-- Mobile Quick Action Icon -->
       <div class="flex items-center gap-1 sm:hidden">
-        <button onclick="openBrochureModal()" class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 active:scale-90 transition-transform">
+        <button onclick="openBrochureModal()" class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 active:scale-90 transition-transform">
           <span class="material-symbols-outlined text-[20px]">download</span>
         </button>
-        <button onclick="toggleMobileNav()" aria-label="Buka Menu" class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 active:scale-90 transition-transform">
-          <span id="menuIcon" class="material-symbols-outlined text-[24px]">menu</span>
+        <button onclick="toggleMobileNav()" aria-label="Buka Menu" class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 active:scale-90 transition-transform">
+          <span id="menuIcon" class="material-symbols-outlined text-[22px]">menu</span>
         </button>
       </div>
 
     </div>
 
     <!-- Mobile Drawer Menu -->
-    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white/98 px-4 pt-3 pb-5 space-y-3 shadow-xl">
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-5 space-y-3 shadow-xl">
       <nav class="flex flex-col space-y-1 font-semibold text-slate-700 text-[15px]">
         <a href="#paket-umrah" onclick="toggleMobileNav()" class="px-3 py-2.5 rounded-xl hover:bg-slate-100 flex items-center justify-between">
           <span>Pilihan Paket Umrah</span>
@@ -181,22 +172,6 @@
     </div>
   </header>
 
-  <!-- MOBILE APP-STYLE QUICK CHIP FILTER (MOBILE ONLY) -->
-  <div class="lg:hidden bg-white border-b border-slate-200/80 px-4 py-2.5 overflow-x-auto no-scrollbar flex items-center gap-2 sticky top-[68px] z-30 shadow-2xs">
-    <a href="#paket-umrah" class="shrink-0 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-800 text-xs font-bold flex items-center gap-1 active:scale-95">
-      <span>✨ Paket Umrah</span>
-    </a>
-    <a href="#fasilitas-lansia" class="shrink-0 px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold flex items-center gap-1 active:scale-95">
-      <span>❤️ Ramah Lansia</span>
-    </a>
-    <a href="#legalitas" class="shrink-0 px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold flex items-center gap-1 active:scale-95">
-      <span>🏛️ Izin Kemenag</span>
-    </a>
-    <a href="#lokasi-kantor" class="shrink-0 px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold flex items-center gap-1 active:scale-95">
-      <span>📍 Surabaya</span>
-    </a>
-  </div>
-
   <!-- HERO SECTION -->
   <section class="relative pt-6 pb-12 sm:pt-10 sm:pb-16 lg:py-20 overflow-hidden bg-gradient-to-b from-white to-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -217,7 +192,7 @@
             Menghadirkan pelayanan setulus hati dengan bimbingan penuh kesabaran. Jarak hotel amat dekat ke pelataran Ka'bah, penerbangan langsung dari Surabaya tanpa transit yang melelahkan.
           </p>
 
-          <!-- Action Buttons (Mobile Native-Touch) -->
+          <!-- Action Buttons -->
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
             <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Elman%20Gemilang%2C%20saya%20ingin%20tanya%20jadwal%20dan%20biaya%20paket%20umrah" target="_blank" rel="noopener noreferrer" class="min-h-[52px] sm:min-h-[56px] px-6 sm:px-8 rounded-2xl bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-sm sm:text-base shadow-md active:scale-[0.98] transition-all flex items-center justify-center gap-2.5">
               <span class="material-symbols-outlined text-[22px] sm:text-[24px]">chat</span>
@@ -246,7 +221,7 @@
           </div>
         </div>
 
-        <!-- Right Column: Visual Hero (Rounded Native Card) -->
+        <!-- Right Column: Visual Hero -->
         <div class="lg:col-span-5 relative mt-2 sm:mt-0">
           <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-slate-200 aspect-[4/5] max-h-[460px] sm:max-h-[520px] w-full">
             <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1000&q=80" alt="Pelataran Ka'bah dan Masjidil Haram Makkah" class="w-full h-full object-cover object-center"/>
@@ -731,7 +706,7 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
         <div class="space-y-3">
-          <div class="h-10 px-2 py-1 rounded-xl bg-[#2DAA9E] inline-flex items-center">
+          <div class="h-10 px-2.5 py-1 rounded-xl bg-[#2DAA9E] inline-flex items-center">
             <img 
               src="https://elmangemilang.com/wp-content/uploads/2023/05/Logo-PNG-White-3-e1683858732571-150x150.png" 
               alt="Logo Elman Gemilang" 
@@ -785,38 +760,51 @@
     </div>
   </footer>
 
-  <!-- NATIVE MOBILE APP TAB BAR (DOCK FLOATING BAR DI BAWAH HP) -->
-  <nav aria-label="Navigasi Bawah" class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-xl border-t border-slate-200/90 px-3 py-2 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] flex items-center justify-between gap-2">
+  <!-- NATIVE INSTAGRAM-STYLE BOTTOM TAB BAR (SILICON VALLEY DESIGN) -->
+  <nav aria-label="Navigasi Bawah" class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-2xl border-t border-slate-200/80 shadow-[0_-4px_24px_rgba(0,0,0,0.04)] px-1 py-1.5 flex items-center justify-around">
+    
     <!-- Tab 1: Beranda -->
-    <a href="#" class="flex flex-col items-center justify-center w-14 py-1 text-slate-600 hover:text-brand-700 active:scale-90 transition-transform">
-      <span class="material-symbols-outlined text-[22px]">home</span>
-      <span class="text-[10px] font-semibold mt-0.5">Beranda</span>
+    <a href="#" class="flex flex-col items-center justify-center flex-1 py-1 text-brand-700 active:scale-90 transition-transform">
+      <span class="material-symbols-outlined text-[23px] fill">home</span>
+      <span class="text-[10px] font-bold mt-0.5 tracking-tight">Beranda</span>
     </a>
 
     <!-- Tab 2: Paket -->
-    <a href="#paket-umrah" class="flex flex-col items-center justify-center w-14 py-1 text-slate-600 hover:text-brand-700 active:scale-90 transition-transform">
-      <span class="material-symbols-outlined text-[22px]">luggage</span>
-      <span class="text-[10px] font-semibold mt-0.5">Paket</span>
+    <a href="#paket-umrah" class="flex flex-col items-center justify-center flex-1 py-1 text-slate-500 hover:text-brand-700 active:scale-90 transition-transform">
+      <span class="material-symbols-outlined text-[23px]">luggage</span>
+      <span class="text-[10px] font-medium mt-0.5 tracking-tight">Paket</span>
     </a>
 
     <!-- Tab 3: Brosur Modal Trigger -->
-    <button onclick="openBrochureModal()" class="flex flex-col items-center justify-center w-14 py-1 text-slate-600 hover:text-brand-700 active:scale-90 transition-transform">
-      <span class="material-symbols-outlined text-[22px]">download</span>
-      <span class="text-[10px] font-semibold mt-0.5">Brosur</span>
+    <button onclick="openBrochureModal()" class="flex flex-col items-center justify-center flex-1 py-1 text-slate-500 hover:text-brand-700 active:scale-90 transition-transform">
+      <span class="material-symbols-outlined text-[23px]">download_for_offline</span>
+      <span class="text-[10px] font-medium mt-0.5 tracking-tight">Brosur</span>
+    </button>
+
+    <!-- Tab 4: Lokasi Kantor -->
+    <a href="#lokasi-kantor" class="flex flex-col items-center justify-center flex-1 py-1 text-slate-500 hover:text-brand-700 active:scale-90 transition-transform">
+      <span class="material-symbols-outlined text-[23px]">store</span>
+      <span class="text-[10px] font-medium mt-0.5 tracking-tight">Kantor</span>
     </a>
 
-    <!-- Main Action Button: WhatsApp Hijau Jumbo -->
-    <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Elman%20Gemilang%2C%20saya%20ingin%20tanya%20paket%20umrah" target="_blank" rel="noopener noreferrer" class="flex-1 min-h-[46px] rounded-2xl bg-[#25D366] active:bg-[#1faa52] text-white font-bold text-xs shadow-md flex items-center justify-center gap-1.5 active:scale-95 transition-all">
-      <span class="material-symbols-outlined text-[20px]">chat</span>
-      <span>Tanya Petugas</span>
+    <!-- Tab 5: Chat WA (Instagram DM / Message Style with Pulse Dot) -->
+    <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Elman%20Gemilang%2C%20saya%20ingin%20tanya%20paket%20umrah" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center flex-1 py-1 text-[#25D366] active:scale-90 transition-transform relative">
+      <div class="relative inline-flex items-center justify-center">
+        <span class="material-symbols-outlined text-[23px]">chat</span>
+        <!-- Subtle Active Notification Dot -->
+        <span class="absolute -top-0.5 -right-0.5 w-2 h-2 bg-[#25D366] rounded-full animate-ping"></span>
+        <span class="absolute -top-0.5 -right-0.5 w-2 h-2 bg-[#25D366] rounded-full"></span>
+      </div>
+      <span class="text-[10px] font-bold mt-0.5 tracking-tight text-[#1da851]">Chat WA</span>
     </a>
+
   </nav>
 
   <!-- MODAL: NATIVE MOBILE BOTTOM-SHEET / DESKTOP MODAL -->
   <div id="brochureModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-950/60 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4">
     <div class="relative bg-white rounded-t-[32px] sm:rounded-3xl max-w-md w-full p-5 sm:p-8 shadow-2xl border border-slate-100 text-slate-900 animate-sheet sm:animate-none">
       
-      <!-- Drag handle khusus tampilan mobile -->
+      <!-- Drag handle khusus mobile -->
       <div class="sm:hidden w-12 h-1.5 bg-slate-300 rounded-full mx-auto mb-4"></div>
 
       <button onclick="closeBrochureModal()" class="absolute top-4 sm:top-5 right-4 sm:right-5 text-slate-400 hover:text-slate-700 p-1 rounded-xl active:scale-90">
@@ -893,7 +881,7 @@
 
     function openBrochureModal() {
       document.getElementById('brochureModal').classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // Kunci scroll layar saat modal terbuka
+      document.body.style.overflow = 'hidden';
     }
     function closeBrochureModal() {
       document.getElementById('brochureModal').classList.add('hidden');
