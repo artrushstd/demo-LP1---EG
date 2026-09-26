@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PT. Elman Gemilang Tour & Travel - Umrah Nyaman Ramah Lansia</title>
+  <meta name="description" content="Biro perjalanan Umrah & Haji resmi berizin Kemenag PPIU No. 20052300040880002. Fasilitas hotel dekat pelataran, direct flight Surabaya, melayani tulus bermakna."/>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+              DEFAULT: '#0f766e',
+            },
+            gold: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              DEFAULT: '#d97706',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Styling khusus icon agar konsisten */
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-brand-100 selection:text-brand-900 pb-20 lg:pb-0">
+
+  <!-- TOP BAR: TRUST & CONTACT -->
+  <div class="bg-brand-900 text-slate-100 text-xs sm:text-sm font-medium border-b border-brand-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-gold-500/20 text-gold-400 border border-gold-500/30">RESMI KEMENAG</span>
+        <span class="text-slate-200">Izin PPIU No. <strong>20052300040880002</strong></span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-200">
+        <a href="tel:0318439999" class="hover:text-white flex items-center gap-1.5 transition-colors">
+          <span class="material-symbols-outlined text-[17px] text-teal-300">call</span>
+          <span>(031) 843-9999</span>
+        </a>
+        <span class="hidden sm:inline text-brand-700">|</span>
+        <span class="hidden sm:flex items-center gap-1.5 text-slate-300">
+          <span class="material-symbols-outlined text-[17px] text-teal-300">location_on</span>
+          <span>Surabaya, Jawa Timur</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR (STICKY) -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-800 to-brand-600 flex items-center justify-center text-white shadow-md shadow-brand-900/10">
+          <span class="material-symbols-outlined text-[26px]">mosque</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-lg sm:text-xl text-slate-900 leading-tight tracking-tight group-hover:text-brand-700 transition-colors">Elman Gemilang</span>
+          <span class="text-[12px] font-semibold text-brand-700 tracking-wide">Melayani Tulus Bermakna</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-[15px] font-semibold text-slate-600">
+        <a href="#paket-umrah" class="px-3.5 py-2 rounded-lg hover:text-brand-700 hover:bg-slate-100 transition-all">Pilihan Paket</a>
+        <a href="#fasilitas-lansia" class="px-3.5 py-2 rounded-lg hover:text-brand-700 hover:bg-slate-100 transition-all">Fasilitas Ramah Lansia</a>
+        <a href="#legalitas" class="px-3.5 py-2 rounded-lg hover:text-brand-700 hover:bg-slate-100 transition-all">Legalitas Resmi</a>
+        <a href="#lokasi-kantor" class="px-3.5 py-2 rounded-lg hover:text-brand-700 hover:bg-slate-100 transition-all">Kantor Surabaya</a>
+        <a href="#faq" class="px-3.5 py-2 rounded-lg hover:text-brand-700 hover:bg-slate-100 transition-all">Tanya Jawab</a>
+      </nav>
+
+      <!-- Desktop CTAs -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="openBrochureModal()" class="px-4 py-2.5 rounded-xl border border-slate-300 hover:border-slate-400 text-slate-700 hover:text-slate-900 font-bold text-sm transition-all flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">download</span>
+          <span>Unduh Brosur</span>
+        </button>
+        <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Elman%20Gemilang%2C%20saya%20ingin%20konsultasi%20paket%20umrah" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm shadow-sm hover:shadow transition-all flex items-center gap-2">
+          <span class="material-symbols-outlined text-[19px]">chat</span>
+          <span>Konsultasi WA</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button onclick="openBrochureModal()" class="p-2 text-slate-700 hover:text-brand-700 rounded-lg sm:hidden">
+          <span class="material-symbols-outlined">download</span>
+        </button>
+        <button onclick="toggleMobileNav()" aria-label="Buka Menu" class="p-2 text-slate-700 hover:bg-slate-100 rounded-xl focus:outline-none">
+          <span id="menuIcon" class="material-symbols-outlined text-[28px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-xl">
+      <nav class="flex flex-col space-y-1 font-semibold text-slate-700 text-base">
+        <a href="#paket-umrah" onclick="toggleMobileNav()" class="px-3 py-2.5 rounded-lg hover:bg-slate-100">Pilihan Paket Umrah</a>
+        <a href="#fasilitas-lansia" onclick="toggleMobileNav()" class="px-3 py-2.5 rounded-lg hover:bg-slate-100">Fasilitas Ramah Lansia</a>
+        <a href="#legalitas" onclick="toggleMobileNav()" class="px-3 py-2.5 rounded-lg hover:bg-slate-100">Legalitas & Kemenag</a>
+        <a href="#lokasi-kantor" onclick="toggleMobileNav()" class="px-3 py-2.5 rounded-lg hover:bg-slate-100">Lokasi Kantor Surabaya</a>
+        <a href="#faq" onclick="toggleMobileNav()" class="px-3 py-2.5 rounded-lg hover:bg-slate-100">Tanya Jawab (FAQ)</a>
+      </nav>
+      <div class="pt-2 flex flex-col gap-2">
+        <button onclick="toggleMobileNav(); openBrochureModal();" class="w-full py-3 rounded-xl border border-slate-300 font-bold text-slate-800 flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined">download</span>
+          Unduh Brosur & Jadwal Resmi
+        </button>
+        <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Elman%20Gemilang%2C%20saya%20ingin%20konsultasi%20paket%20umrah" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-[#25D366] text-white font-bold flex items-center justify-center gap-2 shadow-md">
+          <span class="material-symbols-outlined">chat</span>
+          Tanya via WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-8 pb-16 lg:py-20 overflow-hidden bg-gradient-to-b from-white to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Copywriting -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 text-teal-800 text-xs sm:text-sm font-bold shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+            <span>Musim 1446 H / 2025 • Kuota Terbatas</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-bold text-slate-900 tracking-tight leading-[1.15]">
+            Ibadah Umrah Tenang, Nyaman & Amanah untuk <span class="text-brand-700 underline decoration-gold-500/60 decoration-wavy decoration-2">Ayah Ibu Tercinta</span>
+          </h1>
+
+          <p class="text-slate-600 text-lg sm:text-xl leading-relaxed">
+            Menghadirkan pelayanan setulus hati dengan bimbingan penuh kesabaran. Hotel hanya selangkah ke pelataran Ka'bah, penerbangan langsung dari Surabaya tanpa transit yang melelahkan.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+            <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Elman%20Gemilang%2C%20saya%20ingin%20tanya%20jadwal%20dan%20biaya%20paket%20umrah" target="_blank" rel="noopener noreferrer" class="min-h-[56px] px-8 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-base shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2.5">
+              <span class="material-symbols-outlined text-[24px]">chat</span>
+              <span>Tanya Jadwal via WhatsApp (Gratis)</span>
+            </a>
+            <button onclick="openBrochureModal()" class="min-h-[56px] px-6 rounded-xl bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-bold text-base transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-[22px] text-slate-600">file_download</span>
+              <span>Download Brosur</span>
+            </button>
+          </div>
+
+          <!-- Trust Badges Bar -->
+          <div class="pt-4 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-slate-700">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-brand-700 fill text-[22px]">verified</span>
+              <span class="text-xs sm:text-sm font-semibold">Izin PPIU Kemenag</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-brand-700 fill text-[22px]">flight_takeoff</span>
+              <span class="text-xs sm:text-sm font-semibold">Direct Flight SUB</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-brand-700 fill text-[22px]">accessible</span>
+              <span class="text-xs sm:text-sm font-semibold">Fasilitas Kursi Roda</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-200 aspect-[4/5] max-h-[540px] w-full">
+            <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1000&q=80" alt="Pelataran Ka'bah dan Masjidil Haram Makkah" class="w-full h-full object-cover object-center"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+
+            <!-- Floating Pill 1: Pendampingan -->
+            <div class="absolute top-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-lg border border-white/50 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-teal-100 text-brand-700 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[24px]">favorite</span>
+              </div>
+              <div>
+                <p class="font-bold text-xs sm:text-sm text-slate-900 leading-tight">Melayani Tulus Bermakna</p>
+                <p class="text-[12px] text-slate-600 font-medium">Prioritas kenyamanan lansia & keluarga</p>
+              </div>
+            </div>
+
+            <!-- Floating Pill 2: Direct Flight -->
+            <div class="absolute bottom-4 left-4 right-4 bg-slate-900/90 backdrop-blur-md p-3.5 rounded-2xl border border-slate-700 text-white flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-teal-400">connecting_airports</span>
+                <div>
+                  <p class="font-bold text-xs sm:text-sm">Bandara Juanda Surabaya (SUB)</p>
+                  <p class="text-[11px] text-slate-300">Langsung Jeddah / Madinah</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md bg-teal-500/20 text-teal-300 border border-teal-500/30 text-xs font-bold">Tanpa Transit</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGALITAS RESMI & 5 PASTI UMRAH -->
+  <section id="legalitas" class="py-16 bg-white border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-bold tracking-widest text-brand-700 uppercase">Kepastian & Ketetapan Hukum</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Legalitas Resmi & Standar Pemerintah</h2>
+        <p class="text-slate-600 text-sm sm:text-base">Seluruh dana, tiket pesawat, akomodasi hotel, dan visa jamaah dilindungi sepenuhnya oleh payung hukum Republik Indonesia.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-300 transition-all space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-100/80 text-brand-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">verified_user</span>
+          </div>
+          <span class="text-[11px] font-bold tracking-wider text-teal-700 uppercase">KEMENTERIAN AGAMA RI</span>
+          <h3 class="font-bold text-slate-900 text-base">Izin Resmi PPIU</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">No. 20052300040880002 terdaftar aktif sebagai Penyelenggara Perjalanan Ibadah Umrah.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-300 transition-all space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-100/80 text-brand-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">gavel</span>
+          </div>
+          <span class="text-[11px] font-bold tracking-wider text-teal-700 uppercase">KEMENKUMHAM RI</span>
+          <h3 class="font-bold text-slate-900 text-base">Badan Hukum PT</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">SK Kemenkumham RI No. AHU-0035851.AH.01.01 Tahun 2023 atas nama PT. Elman Gemilang.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-300 transition-all space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-100/80 text-brand-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">handshake</span>
+          </div>
+          <span class="text-[11px] font-bold tracking-wider text-teal-700 uppercase">ASOSIASI RESMI</span>
+          <h3 class="font-bold text-slate-900 text-base">Anggota HIMPUH</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Tergabung resmi dalam Himpunan Penyelenggara Umrah dan Haji Khusus Indonesia.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-300 transition-all space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-100/80 text-brand-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">task_alt</span>
+          </div>
+          <span class="text-[11px] font-bold tracking-wider text-teal-700 uppercase">GERAKAN KEMENAG</span>
+          <h3 class="font-bold text-slate-900 text-base">Standar 5 Pasti Umrah</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Pasti Travelnya, Pasti Jadwalnya, Pasti Terbangnya, Pasti Hotelnya, dan Pasti Visanya.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PILIHAN PAKET UMRAH -->
+  <section id="paket-umrah" class="py-16 lg:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="space-y-2 max-w-2xl">
+          <span class="text-xs font-bold tracking-widest text-brand-700 uppercase">Keberangkatan Juanda Surabaya</span>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">Pilihan Paket Ibadah Ramah Keluarga & Lansia</h2>
+          <p class="text-slate-600 text-base">Penerbangan langsung tanpa transit Surabaya - Madinah/Jeddah agar kondisi tubuh jamaah tetap bugar.</p>
+        </div>
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold text-sm shadow-xs self-start md:self-auto">
+          <span class="material-symbols-outlined text-brand-700">calendar_month</span>
+          <span>Jadwal Musim 1446 H / 2025</span>
+        </div>
+      </div>
+
+      <!-- Comparison Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- CARD 1: KHIDMAT PLUS THAIF (UTAMA) -->
+        <div class="relative bg-white rounded-3xl p-6 sm:p-8 border-2 border-brand-600 shadow-xl flex flex-col justify-between overflow-hidden">
+          <div class="absolute top-0 right-0 bg-brand-700 text-white px-5 py-1.5 rounded-bl-2xl text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+            <span class="material-symbols-outlined text-[16px] text-gold-400 fill">star</span>
+            <span>Rekomendasi Utama Lansia</span>
+          </div>
+
+          <div class="space-y-6 pt-3">
+            <div>
+              <span class="text-xs font-bold text-brand-700 tracking-wider uppercase">DURASI 12 HARI LENGKAP</span>
+              <h3 class="text-2xl font-bold text-slate-900 mt-1">Paket Umrah Khidmat Plus Thaif</h3>
+              <p class="text-slate-600 text-sm mt-1">Akomodasi paling dekat ke pelataran Ka'bah agar bapak dan ibu tidak lelah berjalan kaki.</p>
+            </div>
+
+            <!-- Features Breakdown -->
+            <div class="space-y-3.5 bg-slate-50 p-4 sm:p-5 rounded-2xl border border-slate-200/80 text-sm">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-brand-700 text-[22px] shrink-0 mt-0.5">apartment</span>
+                <div>
+                  <strong class="text-slate-900">Hotel Makkah (★5): Dar Al Eiman Royal</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Hanya 50 meter langsung ke pelataran Masjidil Haram</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-brand-700 text-[22px] shrink-0 mt-0.5">hotel</span>
+                <div>
+                  <strong class="text-slate-900">Hotel Madinah (★4): Front Taiba</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Hanya 100 meter melangkah santai menuju gerbang Raudhah</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-brand-700 text-[22px] shrink-0 mt-0.5">flight</span>
+                <div>
+                  <strong class="text-slate-900">Saudia Airlines Direct SUB - MED</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Terbang langsung dari Surabaya tanpa transit & tanpa ganti pesawat</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-brand-700 text-[22px] shrink-0 mt-0.5">restaurant</span>
+                <div>
+                  <strong class="text-slate-900">Menu Masakan Nusantara 3x Sehari</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Sajian masakan empuk, hangat, ramah lambung orang tua</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-brand-700 text-[22px] shrink-0 mt-0.5">tour</span>
+                <div>
+                  <strong class="text-slate-900">Wisata Ziarah Kota Sejuk Thaif</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Termasuk naik Kereta Gantung & mencicipi buah segar khas Thaif</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price -->
+            <div class="p-4 rounded-2xl bg-teal-50/70 border border-teal-100 flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <span class="text-xs text-slate-500 font-medium">Biaya Paket All-In:</span>
+                <p class="text-2xl sm:text-3xl font-extrabold text-brand-800">Rp 34.500.000 <span class="text-xs font-semibold text-slate-600">/ Jamaah</span></p>
+              </div>
+              <span class="text-xs font-semibold text-teal-800 bg-teal-100 px-3 py-1 rounded-full">Sudah Termasuk Visa & Perlengkapan</span>
+            </div>
+          </div>
+
+          <div class="pt-6">
+            <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%2C%20saya%20tertarik%20mendaftar%20Paket%20Umrah%20Khidmat%20Plus%20Thaif%2012%20Hari" target="_blank" rel="noopener noreferrer" class="w-full min-h-[54px] rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-base shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined">event_seat</span>
+              <span>Cek Sisa Kursi Paket Khidmat Ini</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: REGULER BARAKAH -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div class="space-y-6">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold uppercase w-fit">
+              <span class="material-symbols-outlined text-[16px]">savings</span>
+              <span>Paket Hemat & Khidmat</span>
+            </div>
+
+            <div>
+              <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">DURASI 9 HARI RINGKAS</span>
+              <h3 class="text-2xl font-bold text-slate-900 mt-1">Paket Umrah Reguler Barakah</h3>
+              <p class="text-slate-600 text-sm mt-1">Ibadah tertib syariat dengan fasilitas bintang 4 yang nyaman dan terjangkau.</p>
+            </div>
+
+            <!-- Features Breakdown -->
+            <div class="space-y-3.5 bg-slate-50 p-4 sm:p-5 rounded-2xl border border-slate-200/80 text-sm">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-slate-600 text-[22px] shrink-0 mt-0.5">apartment</span>
+                <div>
+                  <strong class="text-slate-900">Hotel Bintang 4 Makkah & Madinah</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Jarak jalan santai ±250 meter dengan akses jalan datar</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-slate-600 text-[22px] shrink-0 mt-0.5">flight</span>
+                <div>
+                  <strong class="text-slate-900">Lion Air Direct Surabaya - Jeddah PP</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Penerbangan langsung tanpa transit dari Bandara Juanda</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-slate-600 text-[22px] shrink-0 mt-0.5">school</span>
+                <div>
+                  <strong class="text-slate-900">Bimbingan Manasik Intensif di Surabaya</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Pelatihan teori & praktik simulasi thawaf sebelum keberangkatan</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-slate-600 text-[22px] shrink-0 mt-0.5">restaurant</span>
+                <div>
+                  <strong class="text-slate-900">Makan 3x Sehari Prasmanan Nusantara</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Menu masakan Indonesia yang cocok dengan selera Jawa Timur</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-slate-600 text-[22px] shrink-0 mt-0.5">support_agent</span>
+                <div>
+                  <strong class="text-slate-900">Muthawif Ramah Berbahasa Jawa & Indo</strong>
+                  <p class="text-slate-500 text-xs sm:text-sm">Komunikasi hangat, akrab, dan santun untuk orang tua</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price -->
+            <div class="p-4 rounded-2xl bg-slate-100 flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <span class="text-xs text-slate-500 font-medium">Biaya Paket All-In:</span>
+                <p class="text-2xl sm:text-3xl font-extrabold text-slate-800">Rp 29.800.000 <span class="text-xs font-semibold text-slate-600">/ Jamaah</span></p>
+              </div>
+              <span class="text-xs font-semibold text-slate-600 bg-white px-3 py-1 rounded-full border border-slate-200">Tanpa Biaya Tersembunyi</span>
+            </div>
+          </div>
+
+          <div class="pt-6">
+            <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%2C%20saya%20tertarik%20tanya%20Paket%20Umrah%20Reguler%20Barakah%209%20Hari" target="_blank" rel="noopener noreferrer" class="w-full min-h-[54px] rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-base shadow-sm hover:shadow transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined">event_seat</span>
+              <span>Cek Sisa Kursi Paket Reguler</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FASILITAS KHUSUS LANSIA (BENTO GRID) -->
+  <section id="fasilitas-lansia" class="py-16 bg-white border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-bold tracking-widest text-brand-700 uppercase">Pelayanan Setulus Hati</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">Fasilitas Khusus untuk Bapak & Ibu Tercinta</h2>
+        <p class="text-slate-600 text-base">Kami merancang setiap detail perjalanan dengan mengutamakan keselamatan fisik dan kekhusyukan ibadah lansia.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition-all space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-brand-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">accessible</span>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Pendorong Kursi Roda Resmi</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Tersedia bantuan kursi roda dan pendorong resmi berizin saat thawaf & sa'i agar tidak keletihan.</p>
+        </div>
+        <!-- 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition-all space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-brand-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">favorite</span>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Muthawif Sabar & Lembut</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Asatidz pembimbing membacakan zikir dan doa tanpa tergesa-gesa sesuai dengan ritme langkah jamaah.</p>
+        </div>
+        <!-- 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition-all space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-brand-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">soup_kitchen</span>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Menu Hangat Ramah Lambung</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Masakan Indonesia 3x sehari dengan bumbu lembut, sup hangat, sayuran bening, dan buah segar.</p>
+        </div>
+        <!-- 4 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition-all space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-brand-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">medical_services</span>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Pendampingan Medis Siaga</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Tim operasional siap sedia memantau kesehatan jamaah, obat-obatan rutin, hingga koordinasi klinik di Saudi.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOKASI KANTOR & KEAMANAN REKENING (COPYABLE) -->
+  <section id="lokasi-kantor" class="py-16 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left: Kantor Info -->
+        <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="inline-flex items-center gap-2 text-brand-700 font-bold text-xs tracking-wider uppercase">
+              <span class="material-symbols-outlined text-[20px]">store</span>
+              <span>Kantor Operasional Pelayanan</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900">Kunjungi Kantor Kami di Surabaya</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Bapak dan Ibu dipersilakan hadir langsung untuk silaturahmi, konsultasi tatap muka, dan verifikasi dokumen legalitas resmi kami di ruang pelayanan berhawa sejuk.
+            </p>
+
+            <div class="space-y-3 pt-2 text-sm text-slate-700">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-brand-700 text-[22px] shrink-0 mt-0.5">pin_drop</span>
+                <div>
+                  <strong>Alamat Kantor:</strong><br/>
+                  Jl. Ahmad Yani No. 128 (Dekat Bundaran Wonokromo), Kota Surabaya, Jawa Timur 60243
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-brand-700 text-[22px] shrink-0">schedule</span>
+                <div>
+                  <strong>Jam Pelayanan:</strong> Buka Setiap Hari (08.00 - 17.00 WIB)
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-brand-700 text-[22px] shrink-0">call</span>
+                <div>
+                  <strong>Telepon Kantor:</strong> (031) 843-9999
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-col sm:flex-row gap-3">
+            <a href="https://maps.google.com/?q=Wonokromo+Surabaya" target="_blank" rel="noopener noreferrer" class="min-h-[48px] px-5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm flex items-center justify-center gap-2 transition-all">
+              <span class="material-symbols-outlined text-[20px]">directions</span>
+              <span>Buka Google Maps</span>
+            </a>
+            <a href="tel:0318439999" class="min-h-[48px] px-5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm flex items-center justify-center gap-2 transition-all">
+              <span class="material-symbols-outlined text-[20px]">phone</span>
+              <span>Telepon Langsung</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: KEAMANAN REKENING RESMI (COPY INTERACTIVE) -->
+        <div class="lg:col-span-6 bg-amber-50/70 border-2 border-amber-300 p-6 sm:p-8 rounded-3xl shadow-sm flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="inline-flex items-center gap-2 text-amber-800 font-extrabold text-sm tracking-wide">
+              <span class="material-symbols-outlined text-[24px] text-amber-700">security</span>
+              <span>PERINGATAN RESMI KEAMANAN DANA</span>
+            </div>
+            
+            <p class="text-amber-950 text-sm leading-relaxed">
+              Demi melindungi bapak dan ibu dari tindak penipuan, <strong>seluruh pembayaran biaya umrah HANYA SAH</strong> bila disetorkan ke rekening resmi berbadan hukum atas nama <strong>PT. ELMAN GEMILANG TOUR & TRAVEL</strong>.
+            </p>
+
+            <!-- Bank Accounts with Copy Button -->
+            <div class="space-y-3 pt-2">
+              
+              <!-- BSI Account -->
+              <div class="bg-white p-4 rounded-xl border border-amber-200/80 flex items-center justify-between gap-3 shadow-xs">
+                <div>
+                  <span class="text-xs font-bold text-teal-800 uppercase tracking-wider">BANK SYARIAH INDONESIA (BSI)</span>
+                  <div class="text-lg sm:text-xl font-mono font-bold text-slate-900 tracking-wider" id="rekeningBSI">7182938889</div>
+                  <span class="text-xs text-slate-500 font-medium">A.N. PT ELMAN GEMILANG TOUR & TRAVEL</span>
+                </div>
+                <button onclick="copyAccount('7182938889', 'BSI')" class="px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-brand-50 hover:text-brand-700 text-slate-700 text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 border border-slate-200">
+                  <span class="material-symbols-outlined text-[16px]">content_copy</span>
+                  <span>Salin No</span>
+                </button>
+              </div>
+
+              <!-- Mandiri Account -->
+              <div class="bg-white p-4 rounded-xl border border-amber-200/80 flex items-center justify-between gap-3 shadow-xs">
+                <div>
+                  <span class="text-xs font-bold text-blue-800 uppercase tracking-wider">BANK MANDIRI</span>
+                  <div class="text-lg sm:text-xl font-mono font-bold text-slate-900 tracking-wider" id="rekeningMandiri">1420019284444</div>
+                  <span class="text-xs text-slate-500 font-medium">A.N. PT ELMAN GEMILANG TOUR & TRAVEL</span>
+                </div>
+                <button onclick="copyAccount('1420019284444', 'Mandiri')" class="px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-brand-50 hover:text-brand-700 text-slate-700 text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 border border-slate-200">
+                  <span class="material-symbols-outlined text-[16px]">content_copy</span>
+                  <span>Salin No</span>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="p-3 bg-amber-100/70 rounded-xl text-amber-900 text-xs font-semibold flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px] text-amber-700 shrink-0">block</span>
+              <span>KAMI TIDAK PERNAH menerima pembayaran biaya perjalanan ibadah ke rekening pribadi siapapun.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (ACCORDION) -->
+  <section id="faq" class="py-16 bg-white border-t border-slate-200/80">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      
+      <div class="text-center space-y-2">
+        <span class="text-xs font-bold tracking-widest text-brand-700 uppercase">Tanya Jawab</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Pertanyaan Yang Sering Diajukan Jamaah</h2>
+        <p class="text-slate-600 text-sm sm:text-base">Jawaban ringkas dan jelas untuk menjawab keraguan keluarga sebelum mendaftar.</p>
+      </div>
+
+      <div class="space-y-3">
+        
+        <details class="group bg-slate-50 border border-slate-200/80 rounded-2xl p-5 open:bg-teal-50/40 open:border-teal-200 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base sm:text-lg list-none select-none">
+            <span>1. Bagaimana bila orang tua sudah sangat sepuh & butuh kursi roda?</span>
+            <span class="material-symbols-outlined text-slate-500 group-open:rotate-180 group-open:text-brand-700 transition-transform">expand_more</span>
+          </summary>
+          <div class="pt-3 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-200/60 mt-3">
+            Bapak/Ibu tidak perlu khawatir. Kami telah menyiapkan tim muthawif serta pendorong kursi roda resmi berizin di Makkah dan Madinah. Jamaah lansia akan dipandu beriringan dari hotel ke masjid dan saat pelaksanaan thawaf serta sa'i tanpa harus terpisah dari rombongan keluarga.
+          </div>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200/80 rounded-2xl p-5 open:bg-teal-50/40 open:border-teal-200 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base sm:text-lg list-none select-none">
+            <span>2. Apakah dibantu untuk pengurusan paspor & dokumen perjalanan?</span>
+            <span class="material-symbols-outlined text-slate-500 group-open:rotate-180 group-open:text-brand-700 transition-transform">expand_more</span>
+          </summary>
+          <div class="pt-3 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-200/60 mt-3">
+            Tentu saja. Staf operasional PT. Elman Gemilang di Surabaya akan menerbitkan surat rekomendasi resmi Kemenag untuk pembuatan paspor serta mendampingi bapak dan ibu saat jadwal wawancara di Kantor Imigrasi Surabaya jika diperlukan.
+          </div>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200/80 rounded-2xl p-5 open:bg-teal-50/40 open:border-teal-200 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base sm:text-lg list-none select-none">
+            <span>3. Apakah tiket pesawat dan hotel sudah pasti di awal?</span>
+            <span class="material-symbols-outlined text-slate-500 group-open:rotate-180 group-open:text-brand-700 transition-transform">expand_more</span>
+          </summary>
+          <div class="pt-3 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-200/60 mt-3">
+            Ya, pasti. Sesuai prinsip "5 Pasti Umrah" Kemenag RI, setiap jamaah yang terdaftar langsung menerima kode booking maskapai dan nama hotel yang telah terkonfirmasi. Kami tidak pernah memberangkatkan jamaah dengan jadwal mengambang tanpa kepastian tiket.
+          </div>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200/80 rounded-2xl p-5 open:bg-teal-50/40 open:border-teal-200 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base sm:text-lg list-none select-none">
+            <span>4. Bagaimana bila orang tua berangkat sendiri tanpa keluarga?</span>
+            <span class="material-symbols-outlined text-slate-500 group-open:rotate-180 group-open:text-brand-700 transition-transform">expand_more</span>
+          </summary>
+          <div class="pt-3 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-200/60 mt-3">
+            Kami memiliki petugas pendamping khusus yang bertugas memperhatikan jamaah mandiri. Mulai dari pembagian kunci kamar, pengambilan porsi makan, hingga bimbingan wudhu saat di bandara maupun masjid, orang tua Anda akan kami rawat selayaknya orang tua kami sendiri.
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLOSING CALLOUT SECTION -->
+  <section class="py-16 bg-gradient-to-tr from-brand-900 via-brand-800 to-teal-900 text-white relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
+      <div class="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 mx-auto flex items-center justify-center text-gold-400 shadow-inner">
+        <span class="material-symbols-outlined text-[36px]">mosque</span>
+      </div>
+      
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
+        Wujudkan Niat Suci ke Baitullah Bersama Elman Gemilang
+      </h2>
+      
+      <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Jangan tunda keberangkatan orang tua tercinta selagi raga masih berdaya. Konsultasikan jadwal, kondisi kesehatan, dan paket terbaik Anda hari ini dengan tim kami di Surabaya.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+        <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Elman%20Gemilang%2C%20saya%20ingin%20konsultasi%20paket%20umrah%20lansia" target="_blank" rel="noopener noreferrer" class="min-h-[56px] px-8 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-base shadow-lg transition-all flex items-center gap-2">
+          <span class="material-symbols-outlined text-[24px]">chat</span>
+          <span>Hubungi via WhatsApp (Respon Cepat)</span>
+        </a>
+        <a href="tel:0318439999" class="min-h-[56px] px-8 rounded-xl bg-white hover:bg-slate-100 text-slate-900 font-bold text-base shadow-md transition-all flex items-center gap-2">
+          <span class="material-symbols-outlined text-[24px] text-brand-800">call</span>
+          <span>Telepon Kantor: (031) 843-9999</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 pt-12 pb-8 text-sm text-slate-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-brand-700 text-white flex items-center justify-center">
+              <span class="material-symbols-outlined text-[18px]">mosque</span>
+            </div>
+            <span class="font-bold text-base text-slate-900">PT. Elman Gemilang</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+            Penyelenggara Perjalanan Ibadah Umrah resmi yang mengedepankan ketulusan pelayanan, amanah syariat, dan kenyamanan jamaah keluarga.
+          </p>
+          <div class="text-xs font-semibold text-brand-800 bg-brand-50 p-2.5 rounded-lg border border-brand-100">
+            Izin PPIU No. 20052300040880002
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider">Navigasi Layanan</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#paket-umrah" class="hover:text-brand-700 transition-colors">Paket Umrah Khidmat 12 Hari</a></li>
+            <li><a href="#paket-umrah" class="hover:text-brand-700 transition-colors">Paket Umrah Reguler 9 Hari</a></li>
+            <li><a href="#fasilitas-lansia" class="hover:text-brand-700 transition-colors">Fasilitas Khusus Lansia</a></li>
+            <li><a href="#legalitas" class="hover:text-brand-700 transition-colors">Bukti Izin Kemenag RI</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider">Kantor Operasional</h4>
+          <p class="text-xs sm:text-sm leading-relaxed">
+            Jl. Ahmad Yani No. 128 (Dekat Bundaran Wonokromo), Kota Surabaya, Jawa Timur 60243
+          </p>
+          <div class="text-xs space-y-1">
+            <p><strong>Hotline:</strong> (031) 843-9999</p>
+            <p><strong>WhatsApp:</strong> 0812-3456-7890</p>
+          </div>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider">Bantuan Pendaftaran</h4>
+          <p class="text-xs sm:text-sm text-slate-500">Konsultasikan rencana ibadah orang tua Anda langsung dengan asatidz pembimbing kami.</p>
+          <button onclick="openBrochureModal()" class="w-full py-2.5 rounded-lg border border-slate-300 hover:bg-slate-50 font-bold text-xs flex items-center justify-center gap-1.5 transition-all">
+            <span class="material-symbols-outlined text-[16px]">file_download</span>
+            <span>Unduh Brosur PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <p>© 2024 PT. Elman Gemilang Tour & Travel. Hak Cipta Dilindungi Undang-Undang.</p>
+        <p class="font-medium text-slate-700">Anggota Resmi HIMPUH • PPIU Kemenag RI</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- STICKY BOTTOM ACTION BAR (MOBILE ONLY - BOOMER FRIENDLY) -->
+  <aside aria-label="Aksi Cepat" class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2.5 shadow-2xl flex items-center gap-2.5">
+    <a href="tel:0318439999" class="w-2/5 min-h-[50px] rounded-xl bg-slate-100 border border-slate-300 text-slate-800 font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 active:bg-slate-200 transition-colors">
+      <span class="material-symbols-outlined text-[20px] text-brand-700">call</span>
+      <span>Telepon</span>
+    </a>
+    <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Elman%20Gemilang%2C%20saya%20ingin%20tanya%20paket%20umrah" target="_blank" rel="noopener noreferrer" class="w-3/5 min-h-[50px] rounded-xl bg-[#25D366] active:bg-[#1faa52] text-white font-bold text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 transition-colors">
+      <span class="material-symbols-outlined text-[22px]">chat</span>
+      <span>Tanya via WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- MODAL: DOWNLOAD BROSUR & PRICELIST INTERAKTIF -->
+  <div id="brochureModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="relative bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 text-slate-900 animate-in fade-in zoom-in duration-200">
+      
+      <button onclick="closeBrochureModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1 rounded-lg">
+        <span class="material-symbols-outlined text-[24px]">close</span>
+      </button>
+
+      <div class="space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-teal-100 text-brand-800 flex items-center justify-center">
+          <span class="material-symbols-outlined text-[28px]">file_download</span>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold text-slate-900">Unduh Brosur & Daftar Harga</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
+            Dapatkan rincian tanggal keberangkatan, rute penerbangan, dan fasilitas hotel bintang 5 langsung ke WhatsApp Anda.
+          </p>
+        </div>
+
+        <form id="brochureForm" onsubmit="handleBrochureSubmit(event)" class="space-y-3.5 pt-2">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nama Lengkap Anda</label>
+            <input type="text" id="userName" required placeholder="Contoh: Bapak H. Ahmad" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none text-sm font-medium"/>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nomor WhatsApp Aktif</label>
+            <input type="tel" id="userWA" required placeholder="Contoh: 08123456789" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none text-sm font-medium"/>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Rencana Keberangkatan</label>
+            <select id="userMonth" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none text-sm font-medium bg-white">
+              <option value="Bulan Depan / Terdekat">Bulan Depan / Jadwal Terdekat</option>
+              <option value="Syawal / Pasca Ramadhan">Syawal / Pasca Ramadhan</option>
+              <option value="Akhir Tahun">Musim Liburan Akhir Tahun</option>
+              <option value="Belum Tahu / Konsultasi Dulu">Konsultasi Jadwal Dulu</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-[19px]">send</span>
+            <span>Kirim & Buka Brosur Sekarang</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION: COPY REKENING -->
+  <div id="copyToast" class="fixed top-24 right-4 z-50 bg-slate-900 text-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-2 text-xs font-bold transition-all transform translate-y-[-100px] opacity-0 duration-300">
+    <span class="material-symbols-outlined text-teal-400 text-[20px]">check_circle</span>
+    <span id="toastMessage">Nomor rekening berhasil disalin!</span>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC (100% STANDALONE & WORKING) -->
+  <script>
+    // 1. Mobile Menu Drawer Toggle
+    function toggleMobileNav() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      menu.classList.toggle('hidden');
+      if (menu.classList.contains('hidden')) {
+        icon.textContent = 'menu';
+      } else {
+        icon.textContent = 'close';
+      }
+    }
+
+    // 2. Modal Download Brosur Open/Close
+    function openBrochureModal() {
+      document.getElementById('brochureModal').classList.remove('hidden');
+    }
+    function closeBrochureModal() {
+      document.getElementById('brochureModal').classList.add('hidden');
+    }
+    window.addEventListener('click', function(e) {
+      const modal = document.getElementById('brochureModal');
+      if (e.target === modal) {
+        closeBrochureModal();
+      }
+    });
+
+    // 3. Handle Submit Form Brosur (Redirect ke WhatsApp dengan Data Isian)
+    function handleBrochureSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('userName').value.trim();
+      const wa = document.getElementById('userWA').value.trim();
+      const month = document.getElementById('userMonth').value;
+
+      const message = `Assalamu'alaikum CS Elman Gemilang, saya ${name} (${wa}) ingin meminta Brosur & Daftar Harga resmi untuk rencana keberangkatan ${month}. Mohon informasinya.`;
+      const encodedUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+
+      closeBrochureModal();
+      window.open(encodedUrl, '_blank');
+    }
+
+    // 4. Salin Nomor Rekening ke Clipboard
+    function copyAccount(number, bankName) {
+      navigator.clipboard.writeText(number).then(() => {
+        showToast(`Nomor Rekening ${bankName} (${number}) berhasil disalin!`);
+      }).catch(() => {
+        showToast(`Berhasil salin: ${number}`);
+      });
+    }
+
+    // 5. Toast Pop-up Notification
+    function showToast(msg) {
+      const toast = document.getElementById('copyToast');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.textContent = msg;
+
+      toast.classList.remove('translate-y-[-100px]', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-[-100px]', 'opacity-0');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
